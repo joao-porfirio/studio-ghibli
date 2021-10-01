@@ -1,8 +1,71 @@
 .main{
 
   &__container{
+    margin: 50px 10% 0 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
+  &__pre-title{
+    text-align: left;
+    font-family: $poppins-bold;
+    color: $whitesmoke;
+    font-size: 2rem;
+    margin: 14px 0;
+  }
+
+  &__title{
+    text-align: left;
+    font-family: $poppins-black;
+    color: $whitesmoke;
+    font-size: 6.8rem;
+    line-height: 109%;
+    margin: 14px 0;
+  }
+
+  &__info{
+    text-align: left;
+    font-family: $poppins-regular;
+    color: $whitesmoke;
+    font-size: 1.6rem;
+    line-height: 2.88rem;
+    margin: 25px 0;
+  }
+  &__buttons{
+    text-align: left;
+  }
+  &__button-now{
+    background-color: $button-assistir;
+    -webkit-transform: skew(155deg);
+    transform:skew(160deg);
+    font-family: $poppins-regular;
+    font-size: 1.6rem;
+    margin: 5px;
+    padding: 10px 20px;
+    color: $whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__button-trailer{
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: 2px solid $button-assistir;
+    -webkit-transform: skew(155deg);
+    transform:skew(160deg);
+    font-family: $poppins-regular;
+    font-size: 1.6rem;
+    margin: 5px;
+    padding: 10px 20px;
+    color: $whitesmoke;
+    text-transform: uppercase;
+  }
+
+  &__banner-img{
+    max-height: 370px;
+    max-width: 500px;
+  }
+
+
 }
