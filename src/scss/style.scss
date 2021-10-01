@@ -1,0 +1,43 @@
+$background: #628E75;
+$linear: #1A4855;
+$whitesmoke: #F9F9F9;
+$poppins-black: "Poppins-Black";
+$poppins-bold: "Poppins-Bold";
+$poppins-media: "Poppins-Medium";
+$poppins-media: "Poppins-Regular";
+$poppins-semi: "Poppins-SemiBold";
+
+@font-face {
+  font-family: "Poppins-Black";
+  src: url("../assets/fonts/Poppins-Black.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../assets/fonts/Poppins-SemiBold.ttf");
+}
+
+@mixin for-phone-only{
+  @media (max-width: 767.98px){@content;}
+}
+
+body{
+  background: linear-gradient(to bottom right, $background, $linear);
+}
+
+@import 'header','main';

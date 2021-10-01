@@ -1,0 +1,33 @@
+.header{
+
+  &__nav{
+    margin: 50px 10% 0 10%;
+
+    @include for-phone-only{
+      margin: 20px 3% 0 3%;
+    }
+  }
+  &__nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav-icons{
+    display: flex;
+    flex-direction: row;
+  }
+  &__nav-icons li{
+    margin: 0 1.5rem;
+  }
+
+  &__logo{
+    max-width: 100px;
+    max-height: 50px;
+  }
+
+
+}
+
+.icons{
+  max-height: 25px;
+}

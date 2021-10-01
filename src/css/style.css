@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Poppins-Black";
+  src: url("../assets/fonts/Poppins-Black.ttf");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../assets/fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../assets/fonts/Poppins-SemiBold.ttf");
+}
+body {
+  background: linear-gradient(to bottom right, #628E75, #1A4855);
+}
+
+.header__nav {
+  margin: 50px 10% 0 10%;
+}
+@media (max-width: 767.98px) {
+  .header__nav {
+    margin: 20px 3% 0 3%;
+  }
+}
+.header__nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav-icons {
+  display: flex;
+  flex-direction: row;
+}
+.header__nav-icons li {
+  margin: 0 1.5rem;
+}
+.header__logo {
+  max-width: 100px;
+  max-height: 50px;
+}
+
+.icons {
+  max-height: 25px;
+}
+
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
