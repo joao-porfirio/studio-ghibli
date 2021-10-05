@@ -39,6 +39,8 @@ $poppins-semi: "Poppins-SemiBold";
 
 body{
   background: linear-gradient(to bottom right, $background, $linear);
+  overflow: hidden;
+
 }
 
 @import 'header','main';

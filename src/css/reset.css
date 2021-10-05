@@ -10,6 +10,7 @@ html {
 }
 body {
   font-size: 1.6rem;
+  height: 100%;
 }
 h1,
 h2,
@@ -41,3 +42,4 @@ button:focus,
 input:focus {
   border: 0;
 }
+button{cursor: pointer;}
