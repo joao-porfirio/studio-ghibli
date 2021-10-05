@@ -5,6 +5,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+    @include for-phone-only{
+      flex-direction: column;
+      margin: 10px 4% 0 5%;
+      justify-content: center;
+    } 
+  }
+
+  &__conteudo{
+    @include for-phone-only{
+      order: 2;
+    }
+  }
+  &__banner{
+    @include for-phone-only{
+      order: 1;
+    }
   }
 
   &__pre-title{
@@ -13,6 +30,11 @@
     color: $whitesmoke;
     font-size: 2rem;
     margin: 14px 0;
+
+    @include for-phone-only{
+      font-size: 1.8rem;
+      margin: 5px 0;
+    }
   }
 
   &__title{
@@ -22,6 +44,10 @@
     font-size: 6.8rem;
     line-height: 109%;
     margin: 14px 0;
+
+    @include for-phone-only{
+      font-size: 5.2rem;
+    }
   }
 
   &__info{
@@ -31,6 +57,13 @@
     font-size: 1.6rem;
     line-height: 2.88rem;
     margin: 25px 0;
+    margin: 25px 30% 25px 0%;
+
+    @include for-phone-only{
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+      margin: 10px 0;
+    }
   }
   &__buttons{
     text-align: left;
@@ -42,10 +75,15 @@
     font-family: $poppins-regular;
     font-size: 1.6rem;
     margin: 5px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     color: $whitesmoke;
     text-transform: uppercase;
     letter-spacing: 1px;
+
+    @include for-phone-only{
+      margin: 30px 5px;
+      padding: 10px 30px;
+    }
   }
 
   &__button-trailer{
@@ -60,12 +98,28 @@
     padding: 10px 20px;
     color: $whitesmoke;
     text-transform: uppercase;
+
+    @include for-phone-only{
+      display: none;
+    }
   }
 
   &__banner-img{
     max-height: 370px;
     max-width: 500px;
+
+    @include for-phone-only{
+      max-width: 100vw;
+      max-height: 35vh;
+    }
   }
+}
 
-
+.icon-button{
+  color: #669FAB;
+  font-size: 24px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
